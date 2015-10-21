@@ -1,0 +1,24 @@
+﻿.divCanvas{
+    clear:both;
+    float:left;
+}
+.divCanvas canvas{
+    border:1px solid black;
+}
+.divCanvasRight{
+    float:left;
+    padding-left:5px;
+}
+.divCanvasBottom{
+    clear:both;
+}
+.divCanvasRight input, .divCanvasBottom input{
+    height:30px;
+    width:30px;
+}
+.divCanvasRight input{
+    margin-top:10px;
+}
+.divCanvasBottom input{
+    margin-left:10px;
+}
