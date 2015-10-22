@@ -36,6 +36,7 @@ CANVAS.initialize = function (containerId, canvasWidth, canvasHeight, viewWidth,
     //this function will be called before returning the instance and it is safe to name the parameter variables (the variables named after function and in the parenthesis) and does not need the instance variables (obj.variable)
     priv.addComponents = function () {
         var lObj, canvasContainer, rightBtnContainer, bottomButtonContainer;
+        if (document.getElementById("cnv" + containerId)){ return; }//do not create controls if the already exist
         lObj = document.getElementById(containerId);
         if (lObj === undefined || lObj === null) { return; }
         canvasContainer = COMMON.getBasicElement("div", null, null, "divCanvas");
